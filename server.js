@@ -8,7 +8,11 @@ const httpServer = createServer(app);
 const io = new Server(httpServer, { /* options */ });
 
 io.on("connection", (socket) => {
-  // ...
+ console.log('a user connected')
+
+ socket.on("disconnect", () => {
+    console.log("user disconnected");
+  });
 });
 
 
