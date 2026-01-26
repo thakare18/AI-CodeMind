@@ -4,11 +4,11 @@ const ai = new GoogleGenAI({
   apiKey: process.env.GEMINI_API_KEY, // MUST be set
 });
 
-async function generateResponse(prompt) {
+async function generateResponse(chatHistory) {
   try {
     const response = await ai.models.generateContent({
       model: "gemini-3-flash-preview",
-      contents: prompt,
+      contents: chatHistory,
     });
 
     return response.text;
