@@ -26,6 +26,8 @@ It follows a modular backend architecture and a simple frontend interface, makin
 * API testing support with Postman
 
 ---
+## Deployment : coming soon
+
 
 ## AI Model Details
 
